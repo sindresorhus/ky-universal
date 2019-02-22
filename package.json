@@ -1,0 +1,72 @@
+{
+	"name": "ky-universal",
+	"version": "0.0.0",
+	"description": "Use Ky in both Node.js and browsers",
+	"license": "MIT",
+	"repository": "sindresorhus/ky-universal",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"browser.js"
+	],
+	"keywords": [
+		"ky",
+		"universal",
+		"isomorphic",
+		"browser",
+		"browsers",
+		"node",
+		"react",
+		"vue",
+		"ssr",
+		"fetch",
+		"request",
+		"requests",
+		"http",
+		"https",
+		"fetching",
+		"get",
+		"url",
+		"curl",
+		"wget",
+		"net",
+		"network",
+		"ajax",
+		"api",
+		"rest",
+		"xhr",
+		"browser",
+		"got",
+		"axios",
+		"node-fetch"
+	],
+	"dependencies": {
+		"abort-controller": "^2.0.2",
+		"node-fetch": "^2.3.0"
+	},
+	"devDependencies": {
+		"ava": "^1.2.1",
+		"ky": "^0.9.0",
+		"xo": "^0.24.0"
+	},
+	"peerDependencies": {
+		"ky": ">=0.9.0"
+	},
+	"browser": "browser.js",
+	"ava": {
+		"register": [
+			"."
+		]
+	}
+}
