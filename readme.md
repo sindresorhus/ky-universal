@@ -4,7 +4,7 @@
 
 [Ky](https://github.com/sindresorhus/ky) is made for browsers, but this package makes it possible to use it in Node.js too, by polyfilling most of the required browser APIs using [`node-fetch`](https://github.com/bitinn/node-fetch) and [`abort-controller`](https://github.com/mysticatea/abort-controller).
 
-This package can useful for:
+This package can be useful for:
 - Isomorphic code
 - Web apps (React, Vue.js, etc.) that use server-side rendering (SSR)
 - Testing browser libraries using a Node.js test runner
