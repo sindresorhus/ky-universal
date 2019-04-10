@@ -52,12 +52,12 @@
 		"node-fetch"
 	],
 	"dependencies": {
-		"abort-controller": "^2.0.2",
+		"abort-controller": "^3.0.0",
 		"node-fetch": "^2.3.0"
 	},
 	"devDependencies": {
-		"ava": "^1.2.1",
-		"ky": "^0.9.0",
+		"ava": "^1.4.1",
+		"ky": "^0.9.1",
 		"xo": "^0.24.0"
 	},
 	"peerDependencies": {
