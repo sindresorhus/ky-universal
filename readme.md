@@ -24,10 +24,6 @@ $ npm install ky ky-universal
 
 *Note that you also need to install `ky`.*
 
-<a href="https://www.patreon.com/sindresorhus">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
 
 ## Usage
 
@@ -83,8 +79,3 @@ The library that uses Ky will now *just work* in AVA tests.
 
 - [ky](https://github.com/sindresorhus/ky) - Tiny and elegant HTTP client based on the browser Fetch API
 - [got](https://github.com/sindresorhus/got) - Simplified HTTP requests in Node.js
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
