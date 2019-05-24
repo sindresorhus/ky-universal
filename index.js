@@ -15,7 +15,13 @@ if (!global.fetch) {
 	global.AbortController = AbortController;
 }
 
-const {default: ky} = require('ky/umd');
+const {
+	default: ky,
+	HTTPError,
+	TimeoutError
+} = require('ky/umd');
 
 module.exports = ky;
 module.exports.default = ky;
+module.exports.HTTPError = HTTPError;
+module.exports.TimeoutError = TimeoutError;
