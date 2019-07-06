@@ -27,8 +27,6 @@ $ npm install ky ky-universal
 
 ## Usage
 
-Use it like you would use Ky:
-
 ```js
 const ky = require('ky-universal');
 
@@ -38,6 +36,11 @@ const ky = require('ky-universal');
 	// …
 })();
 ```
+
+
+## API
+
+The API is exactly the same as the [Ky API](https://github.com/sindresorhus/ky#api).
 
 
 ## FAQ

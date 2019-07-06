@@ -56,8 +56,8 @@
 		"node-fetch": "^2.3.0"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"ky": "^0.10.0",
+		"ava": "^2.1.0",
+		"ky": "^0.11.1",
 		"xo": "^0.24.0"
 	},
 	"peerDependencies": {
