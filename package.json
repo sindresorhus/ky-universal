@@ -1,6 +1,6 @@
 {
 	"name": "ky-universal",
-	"version": "0.2.1",
+	"version": "0.2.2",
 	"description": "Use Ky in both Node.js and browsers",
 	"license": "MIT",
 	"repository": "sindresorhus/ky-universal",
