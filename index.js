@@ -19,6 +19,10 @@ if (!global.Headers) {
 	global.Headers = fetch.Headers;
 }
 
+if (!global.Request) {
+	global.Request = fetch.Request;
+}
+
 if (!global.Response) {
 	global.Response = fetch.Response;
 }

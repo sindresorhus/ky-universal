@@ -53,15 +53,15 @@
 	],
 	"dependencies": {
 		"abort-controller": "^3.0.0",
-		"node-fetch": "^2.3.0"
+		"node-fetch": "^2.6.0"
 	},
 	"devDependencies": {
-		"ava": "^2.1.0",
-		"ky": "^0.11.1",
+		"ava": "^2.2.0",
+		"ky": "^0.12.0",
 		"xo": "^0.24.0"
 	},
 	"peerDependencies": {
-		"ky": ">=0.10.0"
+		"ky": ">=0.12.0"
 	},
 	"browser": "browser.js",
 	"ava": {
