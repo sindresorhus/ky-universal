@@ -24,6 +24,12 @@ $ npm install ky ky-universal
 
 *Note that you also need to install `ky`.*
 
+If using **`npm 5+`**, use following shortcut
+
+```
+$ npx install-peerdeps ky-universal
+```
+
 
 ## Usage
 
