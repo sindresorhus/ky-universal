@@ -57,11 +57,11 @@
 	},
 	"devDependencies": {
 		"ava": "^2.2.0",
-		"ky": "^0.12.0",
+		"ky": "^0.16.0",
 		"xo": "^0.24.0"
 	},
 	"peerDependencies": {
-		"ky": ">=0.12.0"
+		"ky": ">=0.16.0"
 	},
 	"browser": "browser.js",
 	"ava": {
