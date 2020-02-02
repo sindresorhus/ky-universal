@@ -15,7 +15,6 @@ Keep in mind that Ky targets [modern browsers](https://github.com/sindresorhus/k
 
 **If you only target Node.js, I would strongly recommend using [Got](https://github.com/sindresorhus/got) instead.**
 
-
 ## Install
 
 ```
@@ -23,7 +22,6 @@ $ npm install ky ky-universal
 ```
 
 *Note that you also need to install `ky`.*
-
 
 ## Usage
 
@@ -37,11 +35,9 @@ const ky = require('ky-universal');
 })();
 ```
 
-
 ## API
 
 The API is exactly the same as the [Ky API](https://github.com/sindresorhus/ky#api).
-
 
 ## FAQ
 
@@ -76,7 +72,6 @@ Put the following in package.json:
 ```
 
 The library that uses Ky will now *just work* in AVA tests.
-
 
 ## Related
 
