@@ -2,15 +2,6 @@
 const fetch = require('node-fetch');
 const AbortController = require('abort-controller');
 
-// Extracted from https://github.com/Richienb/try-import/blob/master/index.js
-function tryImport(name) {
-	try {
-		return require(name);
-	} catch (_) { }
-}
-
-const streams = tryImport('web-streams-polyfill/ponyfill/es2018');
-
 if (!global.fetch) {
 	global.fetch = fetch;
 }
