@@ -23,6 +23,8 @@ $ npm install ky ky-universal
 
 *Note that you also need to install `ky`.*
 
+For `ReadableStream` support, also install [`web-streams-polyfill`](https://github.com/MattiasBuelens/web-streams-polyfill).
+
 ## Usage
 
 ```js
