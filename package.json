@@ -62,10 +62,13 @@
 		"xo": "^0.25.3"
 	},
 	"peerDependencies": {
-		"ky": ">=0.17.0"
-	},
-	"optionalDependencies": {
+		"ky": ">=0.17.0",
 		"web-streams-polyfill": ">=2.0.0"
+	},
+	"peerDependenciesMeta": {
+		"web-streams-polyfill": {
+			"optional": true
+		}
 	},
 	"browser": "browser.js",
 	"ava": {
