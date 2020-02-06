@@ -32,7 +32,9 @@ if (!global.AbortController) {
 }
 
 if (!global.ReadableStream && streams) {
-	global.ReadableStream = streams.ReadableStream;
+	try {
+		global.ReadableStream = require('web-streams-polyfill/ponyfill/es2018');
+	} catch (_) {}
 }
 
 module.exports = require('ky/umd');
