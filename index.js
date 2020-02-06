@@ -22,7 +22,7 @@ if (!global.AbortController) {
 	global.AbortController = AbortController;
 }
 
-if (!global.ReadableStream && streams) {
+if (!global.ReadableStream) {
 	try {
 		global.ReadableStream = require('web-streams-polyfill/ponyfill/es2018');
 	} catch (_) {}
