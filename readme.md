@@ -33,7 +33,7 @@ const ky = require('ky-universal');
 (async () => {
 	const {body} = ky('https://httpbin.org/bytes/16');
 	const {value} = await body.getReader().read();
-	const result = new TextDecoder("utf-8").decode(value)
+	const result = new TextDecoder('utf-8').decode(value);
 	
 	// …
 })();
