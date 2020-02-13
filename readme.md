@@ -23,6 +23,20 @@ $ npm install ky ky-universal
 
 *Note that you also need to install `ky`.*
 
+## Usage
+
+```js
+const ky = require('ky-universal');
+
+(async () => {
+	const parsed = await ky('https://httpbin.org/json').json();
+
+	// …
+})();
+```
+
+## `ReadableStream` Support
+
 For `ReadableStream` support, also install [`web-streams-polyfill`](https://github.com/MattiasBuelens/web-streams-polyfill).
 
 You can then use it normally:
@@ -35,18 +49,6 @@ const ky = require('ky-universal');
 	const {value} = await body.getReader().read();
 	const result = new TextDecoder('utf-8').decode(value);
 	
-	// …
-})();
-```
-
-## Usage
-
-```js
-const ky = require('ky-universal');
-
-(async () => {
-	const parsed = await ky('https://httpbin.org/json').json();
-
 	// …
 })();
 ```
