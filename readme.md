@@ -28,7 +28,7 @@ For `ReadableStream` support, also install [`web-streams-polyfill`](https://gith
 You can then use it normally:
 
 ```js
-const ky = require("ky-universal")
+const ky = require('ky-universal');
 
 (async () => {
 	const {body} = ky('https://httpbin.org/bytes/16');
