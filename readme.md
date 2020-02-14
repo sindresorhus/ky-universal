@@ -35,6 +35,28 @@ const ky = require('ky-universal');
 })();
 ```
 
+## `ReadableStream` support
+
+For [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) support, also install [`web-streams-polyfill`](https://github.com/MattiasBuelens/web-streams-polyfill):
+
+```
+$ npm install web-streams-polyfill
+```
+
+You can then use it normally:
+
+```js
+const ky = require('ky-universal');
+
+(async () => {
+	const {body} = await ky('https://httpbin.org/bytes/16');
+	const {value} = await body.getReader().read();
+	const result = new TextDecoder('utf-8').decode(value);
+	
+	// …
+})();
+```
+
 ## API
 
 The API is exactly the same as the [Ky API](https://github.com/sindresorhus/ky#api).

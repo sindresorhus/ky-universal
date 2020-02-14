@@ -22,4 +22,10 @@ if (!global.AbortController) {
 	global.AbortController = AbortController;
 }
 
+if (!global.ReadableStream) {
+	try {
+		global.ReadableStream = require('web-streams-polyfill/ponyfill/es2018');
+	} catch (_) {}
+}
+
 module.exports = require('ky/umd');
