@@ -1,1 +1,3 @@
-export {default} from 'ky';
+import ky from 'ky';
+
+export = ky;
