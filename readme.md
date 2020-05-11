@@ -52,7 +52,7 @@ const ky = require('ky-universal');
 	const {body} = await ky('https://httpbin.org/bytes/16');
 	const {value} = await body.getReader().read();
 	const result = new TextDecoder('utf-8').decode(value);
-	
+
 	// …
 })();
 ```
@@ -94,6 +94,25 @@ Put the following in package.json:
 ```
 
 The library that uses Ky will now *just work* in AVA tests.
+
+#### `clone()` hangs with a large response in Node - What should I do?
+
+Stream in Node.js have a smaller internal buffer size (16Kb, aka `highWaterMark`) from client-side browsers (>1Mb, not consistent across browsers). Because of that, when you are writing an isomorphic app and using `res.clone()`, it will hang with large response in Node.
+
+One way to fix this is to specify the `highWaterMark`:
+
+```js
+import ky from 'ky-universal';
+
+(async () => {
+	const response = await ky('https://example.com', {
+		// About 1Mb
+		highWaterMark: 1024 * 1024
+	});
+
+	const data = await response.clone().buffer();
+})();
+```
 
 ## Related
 
