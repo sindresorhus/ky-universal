@@ -3,9 +3,7 @@ const fetch = require('node-fetch');
 const AbortController = require('abort-controller');
 
 if (!global.fetch) {
-	global.fetch = (url, options) => {
-		return fetch(url, {...options, ...{highWaterMark: 10240 * 1024}});
-	};
+	global.fetch = (url, options) => fetch(url, {...options, ...{highWaterMark: 10240 * 1024}});
 }
 
 if (!global.Headers) {
