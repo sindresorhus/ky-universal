@@ -107,7 +107,7 @@ import ky from 'ky-universal';
 (async () => {
 	const response = await ky('https://example.com', {
 		// 20 MB
-		highWaterMark: 1000 * 1000
+		highWaterMark: 1000 * 1000 * 20
 	});
 
 	const data = await response.clone().buffer();
