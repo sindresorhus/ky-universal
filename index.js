@@ -2,11 +2,10 @@
 const fetch = require('node-fetch');
 const AbortController = require('abort-controller');
 
-const DEFAULT = 16384;
 const TEN_MEGABYTES = 1000 * 1000 * 10;
 
 if (!global.fetch) {
-	global.fetch = options => fetch(options.url, {...options, highWaterMark: options.highWaterMark === DEFAULT ? TEN_MEGABYTES : options.highWaterMark});
+	global.fetch = (url, options) => fetch(url, {highWaterMark: TEN_MEGABYTES, ...options});
 }
 
 if (!global.Headers) {
