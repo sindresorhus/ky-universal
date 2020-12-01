@@ -1,4 +1,4 @@
-# ky-universal [![Build Status](https://travis-ci.com/sindresorhus/ky-universal.svg?branch=master)](https://travis-ci.com/sindresorhus/ky-universal)
+# ky-universal
 
 > Use Ky in both Node.js and browsers
 
