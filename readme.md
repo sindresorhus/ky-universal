@@ -26,13 +26,11 @@ $ npm install ky ky-universal
 ## Usage
 
 ```js
-const ky = require('ky-universal');
+import ky from 'ky-universal';
 
-(async () => {
-	const parsed = await ky('https://httpbin.org/json').json();
+const parsed = await ky('https://httpbin.org/json').json();
 
-	// …
-})();
+// …
 ```
 
 ## `ReadableStream` support
@@ -46,15 +44,13 @@ $ npm install web-streams-polyfill
 You can then use it normally:
 
 ```js
-const ky = require('ky-universal');
+import ky from 'ky-universal';
 
-(async () => {
-	const {body} = await ky('https://httpbin.org/bytes/16');
-	const {value} = await body.getReader().read();
-	const result = new TextDecoder('utf-8').decode(value);
+const {body} = await ky('https://httpbin.org/bytes/16');
+const {value} = await body.getReader().read();
+const result = new TextDecoder('utf-8').decode(value);
 
-	// …
-})();
+// …
 ```
 
 ## API
@@ -70,11 +66,9 @@ Use it like you would use Ky:
 ```js
 import ky from 'ky-universal';
 
-(async () => {
-	const parsed = await ky('https://httpbin.org/json').json();
+const parsed = await ky('https://httpbin.org/json').json();
 
-	// …
-})();
+// …
 ```
 
 Webpack will ensure the polyfills are only included and used when the app is rendered on the server-side.
@@ -104,14 +98,12 @@ However, you can specify a custom `highWaterMark` if needed:
 ```js
 import ky from 'ky-universal';
 
-(async () => {
-	const response = await ky('https://example.com', {
-		// 20 MB
-		highWaterMark: 1000 * 1000 * 20
-	});
+const response = await ky('https://example.com', {
+	// 20 MB
+	highWaterMark: 1000 * 1000 * 20
+});
 
-	const data = await response.clone().buffer();
-})();
+const data = await response.clone().buffer();
 ```
 
 ## Related

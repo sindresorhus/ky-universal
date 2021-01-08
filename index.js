@@ -1,33 +1,33 @@
-'use strict';
-const fetch = require('node-fetch');
-const AbortController = require('abort-controller');
+import fetch, {Headers, Request, Response} from 'node-fetch';
+import AbortController from 'abort-controller';
+import ky from 'ky';
 
 const TEN_MEGABYTES = 1000 * 1000 * 10;
 
-if (!global.fetch) {
-	global.fetch = (url, options) => fetch(url, {highWaterMark: TEN_MEGABYTES, ...options});
+if (!globalThis.fetch) {
+	globalThis.fetch = (url, options) => fetch(url, {highWaterMark: TEN_MEGABYTES, ...options});
 }
 
-if (!global.Headers) {
-	global.Headers = fetch.Headers;
+if (!globalThis.Headers) {
+	globalThis.Headers = Headers;
 }
 
-if (!global.Request) {
-	global.Request = fetch.Request;
+if (!globalThis.Request) {
+	globalThis.Request = Request;
 }
 
-if (!global.Response) {
-	global.Response = fetch.Response;
+if (!globalThis.Response) {
+	globalThis.Response = Response;
 }
 
-if (!global.AbortController) {
-	global.AbortController = AbortController;
+if (!globalThis.AbortController) {
+	globalThis.AbortController = AbortController;
 }
 
-if (!global.ReadableStream) {
+if (!globalThis.ReadableStream) {
 	try {
-		global.ReadableStream = require('web-streams-polyfill/ponyfill/es2018');
-	} catch (_) {}
+		globalThis.ReadableStream = await import('web-streams-polyfill/ponyfill/es2018');
+	} catch {}
 }
 
-module.exports = require('ky/umd');
+export default ky;
