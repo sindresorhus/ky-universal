@@ -12,8 +12,8 @@
 	},
 	"type": "module",
 	"exports": {
-		"import": "./browser.js",
-		"node": "./index.js"
+		"node": "./index.js",
+		"default": "./browser.js"
 	},
 	"engines": {
 		"node": ">=14"
