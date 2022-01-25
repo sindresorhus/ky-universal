@@ -17,8 +17,8 @@ Keep in mind that Ky targets [modern browsers](https://github.com/sindresorhus/k
 
 ## Install
 
-```
-$ npm install ky ky-universal
+```sh
+npm install ky ky-universal
 ```
 
 *Note that you also need to install `ky`.*

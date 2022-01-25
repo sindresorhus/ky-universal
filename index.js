@@ -26,6 +26,7 @@ if (!globalThis.AbortController) {
 
 if (!globalThis.ReadableStream) {
 	try {
+		// eslint-disable-next-line node/file-extension-in-import, node/no-unsupported-features/es-syntax
 		globalThis.ReadableStream = await import('web-streams-polyfill/ponyfill/es2018');
 	} catch {}
 }
