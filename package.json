@@ -60,13 +60,13 @@
 	],
 	"dependencies": {
 		"abort-controller": "^3.0.0",
-		"node-fetch": "3.2.0"
+		"node-fetch": "^3.2.2"
 	},
 	"devDependencies": {
-		"ava": "^4.0.1",
-		"ky": "^0.28.7",
+		"ava": "^4.1.0",
+		"ky": "^0.30.0",
 		"tsd": "^0.19.1",
-		"xo": "^0.47.0"
+		"xo": "^0.48.0"
 	},
 	"peerDependencies": {
 		"ky": ">=0.26.0",
