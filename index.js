@@ -32,3 +32,4 @@ if (!globalThis.ReadableStream) {
 }
 
 export default ky;
+export * from 'ky';

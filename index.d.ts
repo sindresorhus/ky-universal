@@ -1,4 +1,2 @@
-import ky from 'ky';
-
-export default ky;
+export {default} from 'ky';
 export * from 'ky';

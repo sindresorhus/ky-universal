@@ -55,7 +55,7 @@ const result = new TextDecoder('utf-8').decode(value);
 
 ## API
 
-The API is exactly the same as the [Ky API](https://github.com/sindresorhus/ky#api).
+The API is exactly the same as the [Ky API](https://github.com/sindresorhus/ky#api), including the [named exports](https://github.com/sindresorhus/ky#httperror).
 
 ## FAQ
 
