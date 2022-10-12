@@ -25,12 +25,11 @@ if (!globalThis.AbortController) {
 
 if (!globalThis.ReadableStream) {
 	try {
-		// eslint-disable-next-line node/file-extension-in-import, node/no-unsupported-features/es-syntax
 		globalThis.ReadableStream = await import('web-streams-polyfill/ponyfill/es2018');
 	} catch {}
 }
 
-const {default: ky, HTTPError, TimeoutError} = await import('ky'); // eslint-disable-line node/no-unsupported-features/es-syntax
+const {default: ky, HTTPError, TimeoutError} = await import('ky');
 
 export default ky;
 export {HTTPError, TimeoutError};
