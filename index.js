@@ -1,6 +1,5 @@
 import fetch, {Headers, Request, Response} from 'node-fetch';
 import AbortController from 'abort-controller';
-import ky from 'ky';
 
 const TEN_MEGABYTES = 1000 * 1000 * 10;
 
@@ -31,5 +30,7 @@ if (!globalThis.ReadableStream) {
 	} catch {}
 }
 
+const {default: ky, HTTPError, TimeoutError} = await import('ky'); // eslint-disable-line node/no-unsupported-features/es-syntax
+
 export default ky;
-export * from 'ky';
+export {HTTPError, TimeoutError};

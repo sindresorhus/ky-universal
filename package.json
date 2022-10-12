@@ -64,7 +64,7 @@
 	},
 	"devDependencies": {
 		"ava": "^4.1.0",
-		"ky": "^0.30.0",
+		"ky": "^0.31.4",
 		"tsd": "^0.19.1",
 		"xo": "^0.48.0"
 	},
@@ -77,10 +77,5 @@
 			"optional": true
 		}
 	},
-	"browser": "browser.js",
-	"xo": {
-		"rules": {
-			"unicorn/prefer-export-from": "off"
-		}
-	}
+	"browser": "browser.js"
 }
