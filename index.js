@@ -1,5 +1,4 @@
 import fetch, {Headers, Request, Response} from 'node-fetch';
-import AbortController from 'abort-controller';
 
 const TEN_MEGABYTES = 1000 * 1000 * 10;
 
@@ -17,10 +16,6 @@ if (!globalThis.Request) {
 
 if (!globalThis.Response) {
 	globalThis.Response = Response;
-}
-
-if (!globalThis.AbortController) {
-	globalThis.AbortController = AbortController;
 }
 
 if (!globalThis.ReadableStream) {

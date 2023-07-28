@@ -2,18 +2,16 @@
 
 > Use Ky in both Node.js and browsers
 
-[Ky](https://github.com/sindresorhus/ky) is made for browsers, but this package makes it possible to use it in Node.js too, by polyfilling most of the required browser APIs using [`node-fetch`](https://github.com/bitinn/node-fetch) and [`abort-controller`](https://github.com/mysticatea/abort-controller).
+[Ky](https://github.com/sindresorhus/ky) is made for browsers, but this package makes it possible to use it in Node.js too, by polyfilling most of the required browser APIs using [`node-fetch`](https://github.com/bitinn/node-fetch).
 
 This package can be useful for:
 - Isomorphic code
 - Web apps (React, Vue.js, etc.) that use server-side rendering (SSR)
 - Testing browser libraries using a Node.js test runner
 
-**Note:** Before opening an issue, make sure it's an issue with Ky and not its polyfills. Generally, if something works in the browser, but not in Node.js, it's an issue with `node-fetch` or `abort-controller`.
+**Note:** Before opening an issue, make sure it's an issue with Ky and not its polyfills. Generally, if something works in the browser, but not in Node.js, it's an issue with `node-fetch`.
 
 Keep in mind that Ky targets [modern browsers](https://github.com/sindresorhus/ky#browser-support) when used in the browser. For older browsers, you will need to transpile and use a [`fetch` polyfill](https://github.com/github/fetch).
-
-**If you only target Node.js, I would strongly recommend using [Got](https://github.com/sindresorhus/got) instead.**
 
 ## Install
 
