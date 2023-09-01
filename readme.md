@@ -2,6 +2,8 @@
 
 > Use Ky in both Node.js and browsers
 
+**As of [Ky 1.0.0](https://github.com/sindresorhus/ky/releases/tag/v1.0.0), it runs natively on Node.js. So this package is no longer needed.**
+
 [Ky](https://github.com/sindresorhus/ky) is made for browsers, but this package makes it possible to use it in Node.js too, by polyfilling most of the required browser APIs using [`node-fetch`](https://github.com/bitinn/node-fetch).
 
 This package can be useful for:
