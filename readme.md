@@ -37,8 +37,8 @@ const parsed = await ky('https://httpbin.org/json').json();
 
 For [`ReadableStream`](https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream) support, also install [`web-streams-polyfill`](https://github.com/MattiasBuelens/web-streams-polyfill):
 
-```
-$ npm install web-streams-polyfill
+```sh
+npm install web-streams-polyfill
 ```
 
 You can then use it normally:
